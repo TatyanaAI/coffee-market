@@ -1,0 +1,26 @@
+=wide-tablet-landscape
+  @media screen and (max-width: 1519px)
+    @content
+
+=tablet-landscape
+  @media screen and (max-width: 1023px)
+    @content
+
+=mobile-landscape
+  @media screen and (max-width: 767px)
+    @content
+
+=my-font($size, $weight, $height, $style: normal, $family:$main-font)
+  font-family: $family
+  font-size: $size
+  font-style: $style
+  font-weight: $weight
+  line-height: $height
+
+=myflex-row()
+    display: flex
+    flex-direction: row
+
+=myflex-column()
+    display: flex
+    flex-direction: column

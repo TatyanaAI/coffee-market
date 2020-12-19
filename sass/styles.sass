@@ -1,0 +1,397 @@
+$color-primary:#415167
+$color-accent:#C7A17A
+$color-accent-light:#F9F5E8
+$color-dark-gray:#151D28
+$color-light-gray:#EDF0F5
+$color-light: #f9fbff
+
+$main-font: 'Nunito'
+$second-font: 'Montserrat'
+
+$main-fonts: $main-font, Arial, sans-serif 
+
+@import _mixins
+// @import _header
+// @import _main
+// @import _footer
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    outline: 0
+
+body
+    +my-font(16px, 300, 22px)
+    color: $color-dark-gray
+    background-color: $color-light
+    min-width: 1250px
+
+h1
+    +my-font(54px, 900, 70px, normal, $second-font)
+    // +mobile-landscape
+    //     +my-font(36px, 400, 50px)
+
+h2
+    +my-font(30px, 900, 34px, normal, $second-font)
+    // +mobile-landscape
+    //     +my-font(24px, 700, 36px)
+
+h3
+    +my-font(24px, 700, 28px)
+    // +mobile-landscape
+    //     +my-font(18px, 700, 30px)
+
+h4
+    +my-font(20px, 600, 24px)
+    // +mobile-landscape
+    //     +my-font(18px, 700, 30px)
+
+h5
+    +my-font(14px, 300, 19px, italic)
+    // +mobile-landscape
+    //     +my-font(18px, 700, 30px)
+
+.container
+    width: 1250px
+    margin: 0 auto
+
+    // +wide-tablet-landscape
+    //     width: 100%
+
+    // +tablet-landscape
+
+    // +mobile-landscape
+
+// .small_button
+//     height: 40px
+//     width: 130px
+//     +my-font(15px, 500, 38px)
+
+// .big_button
+//     height: 52px
+//     width: 192px
+//     +my-font(17px, 500, 50px)
+
+// .light_button
+//     background-color: white
+//     color: $color-link
+
+//     &:hover
+//         background-color: $color-link
+//         color: white
+
+// .dark_button
+//     background-color: $color-link
+//     color: white
+
+//     &:hover
+//         background-color: white
+//         color: $color-link
+
+.header
+    background: linear-gradient(to right, $color-light 0%, $color-light 50%, $color-primary 50%, $color-primary 100%)
+
+    & .container
+        +myflex-row()
+        justify-content: space-between
+        height: 768px
+        background: url(../uploads/bg-main-coffee.png) 357px top no-repeat
+
+.header_banner_block
+    +myflex-column()
+    justify-content: space-between
+    align-items: flex-start
+    margin: 75px 0 54px 112px
+
+.logo_link
+    display: block
+
+.logo_image
+    display: block
+
+.header_title
+    color: $color-primary
+    margin: 0 0 0 8px
+
+    & span
+        display: block
+        background: $color-accent
+        color: $color-light
+        padding: 0 15px
+        margin-left: -15px
+
+.header_navbar_block
+    width: 199px
+    +myflex-column()
+    justify-content: flex-start
+    align-items: flex-start
+    padding: 89px 0 0 56px
+
+.header_navbar_block_cart
+    position: relative
+    width: 18px
+    height: 18px
+    text-decoration: none
+    background: url(../img/ic-shopping-cart.svg) center no-repeat
+    margin: 0 0 123px 3px
+
+    & span
+        +my-font(14px, 300, 20px)
+        display: inline-block
+        position: absolute
+        top: -13px
+        left: 13px
+        min-width: 20px
+        height: 20px
+        background: $color-accent
+        color: $color-light
+        border-radius: 10px
+        text-align: center
+        padding: 0 5px
+
+.header_navbar_block_container
+    +my-font(16px, 300, 22px)
+    text-transform: uppercase
+    +myflex-column()
+    justify-content: flex-start
+    align-items: flex-start
+
+.header_navbar_item
+    color: $color-light-gray
+    text-decoration: none
+    margin-bottom: 27px
+
+    &.active, &:hover
+        font-weight: 700
+
+.main
+    +myflex-column()
+
+.main_content_description_block
+    padding: 88px 53px 101px
+    text-align: center
+
+    & .main_content_title
+        margin-bottom: 89px
+
+    & .main_content_item_title
+        margin-bottom: 12px
+
+.main_content_subtitle
+    text-align: center
+    color: $color-primary
+    margin-bottom: 5px
+
+.main_content_title
+    text-align: center
+    color: $color-primary
+
+.main_content_description_block_items
+    +myflex-row()
+    justify-content: space-between
+
+.main_content_description_block_item
+    width: 23%
+    background-position: center top
+    background-repeat: no-repeat
+    padding-top: 123px
+
+    &:nth-child(1)
+        background-image: url(../img/ic-nguon-goc.svg)
+
+    &:nth-child(2)
+        background-image: url(../img/ic-chat-luong.svg)
+
+    &:nth-child(3)
+        background-image: url(../img/ic-cac-loai-hat.svg)
+
+    &:nth-child(4)
+        background-image: url(../img/ic-pha-che.svg)
+
+.main_content_item_text
+
+.main_content_tabs_block
+    background: linear-gradient(to right, $color-light-gray 0%, $color-light-gray 50%, $color-light 50%, $color-light 100%)
+
+    & .container
+        padding: 87px 59px 126px
+        background: linear-gradient(to right, $color-light-gray 0%, $color-light-gray 80%, $color-light 80%, $color-light 100%)
+
+    & .main_content_title
+        margin-bottom: 66px
+
+.main_content_tabs_block_wrapper
+    +myflex-row()
+    justify-content: flex-end
+
+.main_content_tabs_block_items
+    border-right: 1px solid $color-light-gray
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.2)
+
+.main_content_tabs_block_item
+    +myflex-row()
+    align-items: flex-start
+    background: white
+    width: 794px
+    padding: 51px 50px 55px 0
+
+    & .main_content_colored_subtitle
+        margin-bottom: 7px
+
+    & .main_content_item_title
+        margin-bottom: 14px
+
+    & .main_content_button
+        &.bordered
+            width: 166px
+            height: 38px
+            line-height: 38px
+            margin-right: 125px
+
+.main_content_tabs_block_item_image
+    display: block
+    margin: 0 129px 0 -213px
+
+.main_content_tabs_block_item_text_block
+    padding: 14px 0 0 0
+
+.main_content_colored_subtitle
+    color: $color-accent
+
+.main_content_tabs_block_item_additional_info_wrapper
+    +myflex-row()
+    margin-top: 24px
+    margin-bottom: 42px
+
+.main_content_tabs_block_item_additional_info_item
+    background-position: 6px 6px
+    background-repeat: no-repeat
+    padding-left: 51px
+
+    &:nth-child(1)
+        width: 220px
+        margin-right: 43px
+
+    &:nth-child(1)
+        background-image: url(../img/ic-coffee-beans.svg)
+
+    &:nth-child(2)
+        background-image: url(../img/ic-mountain.svg)
+
+.main_content_tabs_block_item_additional_info_item_text
+    +my-font(16px, 600, 22px)
+
+    & span
+        font-weight: 300
+
+.main_content_buttons_wrapper
+    +myflex-row()
+    align-items: center
+
+.main_content_button
+    +my-font(16px, 700, 22px)
+    display: inline-block
+    text-align: center
+    text-decoration: none
+    transition: background-color 0.2s, color 0.2s
+    color: $color-primary
+    border: none
+    cursor: pointer
+
+    &:hover
+        color: $color-accent
+
+    &.bordered
+        background: $color-accent
+        border-radius: 19px
+        color: $color-light
+
+        &:hover
+            background: $color-accent-light
+            color: $color-primary
+
+.tab_number_block
+    width: 88px
+    +myflex-column()
+
+.tab_number
+    height: 33.3%
+    +my-font(30px, 900, 34px, normal, $second-font)
+    background: $color-light-gray
+    opacity: 0.3
+    color: $color-primary
+    border: none
+    cursor: pointer
+
+    &.active
+        background: white
+        opacity: 1
+        box-shadow: 0 3px 5px -3px rgba(0,0,0,0.2)
+
+.main_content_cards_block
+    background: linear-gradient(to right, $color-light 0%, $color-light 50%, $color-primary 50%, $color-primary 100%)
+
+    & .container
+        background: linear-gradient(to right, $color-light 0%, $color-light 80%, $color-primary 80%, $color-primary 100%)
+        padding: 91px 53px 128px
+
+    & .main_content_subtitle
+        text-align: center
+
+    & .main_content_title
+        text-align: center
+
+.main_content_cards_block_items
+    +myflex-row()
+    justify-content: space-between
+    margin-top: 63px
+
+.main_content_cards_block_item
+    width: 32%
+    background: $color-light-gray
+
+    &:hover
+        filter: drop-shadow(0px 4px 24px rgba(205, 205, 205, 0.5))
+
+.main_content_cards_block_item_image
+    display: block
+    margin: 0 auto
+
+.main_content_cards_block_item_text_block
+    background: white
+    padding: 44px 42px 42px 42px
+
+    & .main_content_item_text
+        display: -webkit-box
+        -webkit-line-clamp: 2
+        -webkit-box-orient: vertical
+        overflow: hidden
+        margin-bottom: 32px
+
+    & .main_content_item_title
+        margin-bottom: 10px
+
+    & .main_content_button
+        &.bordered
+            width: 134px
+            height: 32px
+            line-height: 32px
+            margin-right: 64px
+
+.main_content_colored_title_wrapper
+    +myflex-row()
+    align-items: center
+    margin-bottom: 7px
+
+.main_content_cards_block_item_crossed_subtitle
+    text-decoration-line: line-through
+    margin-left: 20px
+
+.copyright
+    background: $color-light-gray
+
+    & .container
+        +my-font(16px, 300, 22px, italic)
+        text-align: center
+        padding: 18px 0 20px

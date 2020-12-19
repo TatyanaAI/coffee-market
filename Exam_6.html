@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="">
-    <script src=""></script>
-    <script src=""></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -21,13 +21,14 @@
                 <a href="#" class="logo_link">
                     <img src="img/ic-logo.svg" class="logo_image" alt="Logo">
                 </a>
-                <img src="uploads/bg-main-coffee.png" class="header_main_banner" alt="main_banner">
                 <h1 class="header_title">YOUR <span>PERSONALIZED</span> COFFEE</h1>
             </div>
             <div class="header_navbar_block">
-                <div class="header_navbar_block_cart"></div>
+                <a href="#" class="header_navbar_block_cart">
+                    <span>2</span>
+                </a>
                 <div class="header_navbar_block_container">
-                    <a href="#" class="header_navbar_item">TRANG CHỦ</a>
+                    <a href="#" class="header_navbar_item active">TRANG CHỦ</a>
                     <a href="#" class="header_navbar_item">COFFEE</a>
                     <a href="#" class="header_navbar_item">PHIN MẠ MÀU</a>
                     <a href="#" class="header_navbar_item">COMBO PHIN PHÊ</a>
@@ -86,17 +87,18 @@
                     Best Gift For Best Friend
                 </h4>
                 <h2 class="main_content_title">GIFTSET</h2>
-                <div class="main_content_tabs_block_items">
-                    <div class="main_content_tabs_block_item">
-                        <h2 class="tab_number">1</h2>
-                        <div class="main_content_tabs_block_wrapper">
+
+                <div class="main_content_tabs_block_wrapper">
+                    <div class="main_content_tabs_block_items">
+                        <div class="main_content_tabs_block_item">
                             <img src="uploads/bg-giftset.png" class="main_content_tabs_block_item_image">
                             <div class="main_content_tabs_block_item_text_block">
-                                <h5 class="main_content_colored_subtitle">285.000</h5>
+                                <h4 class="main_content_colored_subtitle">285.000</h4>
                                 <h3 class="main_content_item_title">Giftset "Cà phê phin Việt Nam"</h3>
                                 <p class="main_content_item_text">
                                     Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng
-                                    chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng,
+                                    chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi
+                                    tiếng,
                                     cùng với tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh
                                     khiết chỉ
                                     dành riêng cho bạn.
@@ -105,13 +107,87 @@
                                     <div class="main_content_tabs_block_item_additional_info_item">
                                         <p class="main_content_tabs_block_item_additional_info_item_text"><span>Loại
                                                 hạt</span></p>
-                                        <p class="main_content_tabs_block_item_additional_info_item_text">Fine Robusta
+                                        <p class="main_content_tabs_block_item_additional_info_item_text">Fine
+                                            Robusta
                                             Blend </p>
                                     </div>
                                     <div class="main_content_tabs_block_item_additional_info_item">
                                         <p class="main_content_tabs_block_item_additional_info_item_text"><span>Độ
                                                 cao</span></p>
-                                        <p class="main_content_tabs_block_item_additional_info_item_text">700 - 800m</p>
+                                        <p class="main_content_tabs_block_item_additional_info_item_text">700 - 800m
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main_content_buttons_wrapper">
+                                    <a href="#" class="main_content_button bordered">MUA NGAY</a>
+                                    <a href="#" class="main_content_button">CHI TIẾT</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_content_tabs_block_item">
+                            <img src="uploads/bg-giftset.png" class="main_content_tabs_block_item_image">
+                            <div class="main_content_tabs_block_item_text_block">
+                                <h4 class="main_content_colored_subtitle">285.0002</h4>
+                                <h3 class="main_content_item_title">Giftset "Cà phê phin Việt Nam"</h3>
+                                <p class="main_content_item_text">
+                                    Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng
+                                    chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi
+                                    tiếng,
+                                    cùng với
+                                    tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết
+                                    chỉ
+                                    dành riêng
+                                    cho bạn.
+                                </p>
+                                <div class="main_content_tabs_block_item_additional_info_wrapper">
+                                    <div class="main_content_tabs_block_item_additional_info_item">
+                                        <p class="main_content_tabs_block_item_additional_info_item_text"><span>Loại
+                                                hạt</span></p>
+                                        <p class="main_content_tabs_block_item_additional_info_item_text">Fine
+                                            Robusta
+                                            Blend </p>
+                                    </div>
+                                    <div class="main_content_tabs_block_item_additional_info_item">
+                                        <p class="main_content_tabs_block_item_additional_info_item_text"><span>Độ
+                                                cao</span></p>
+                                        <p class="main_content_tabs_block_item_additional_info_item_text">700 - 800m
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="main_content_buttons_wrapper">
+                                    <a href="#" class="main_content_button bordered">MUA NGAY</a>
+                                    <a href="#" class="main_content_button">CHI TIẾT</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_content_tabs_block_item">
+                            <img src="uploads/bg-giftset.png" class="main_content_tabs_block_item_image">
+                            <div class="main_content_tabs_block_item_text_block">
+                                <h4 class="main_content_colored_subtitle">285.0003</h4>
+                                <h3 class="main_content_item_title">Giftset "Cà phê phin Việt Nam"</h3>
+                                <p class="main_content_item_text">
+                                    Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng
+                                    chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi
+                                    tiếng,
+                                    cùng với
+                                    tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết
+                                    chỉ
+                                    dành riêng
+                                    cho bạn.
+                                </p>
+                                <div class="main_content_tabs_block_item_additional_info_wrapper">
+                                    <div class="main_content_tabs_block_item_additional_info_item">
+                                        <p class="main_content_tabs_block_item_additional_info_item_text"><span>Loại
+                                                hạt</span></p>
+                                        <p class="main_content_tabs_block_item_additional_info_item_text">Fine
+                                            Robusta
+                                            Blend </p>
+                                    </div>
+                                    <div class="main_content_tabs_block_item_additional_info_item">
+                                        <p class="main_content_tabs_block_item_additional_info_item_text"><span>Độ
+                                                cao</span></p>
+                                        <p class="main_content_tabs_block_item_additional_info_item_text">700 - 800m
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="main_content_buttons_wrapper">
@@ -121,75 +197,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main_content_tabs_block_item">
-                        <h2 class="tab_number">2</h2>
-                        <div class="main_content_tabs_block_wrapper">
-                            <img src="uploads/bg-giftset.png" class="main_content_tabs_block_item_image">
-                            <div class="main_content_tabs_block_item_text_block">
-                                <h5 class="main_content_colored_subtitle">285.000</h5>
-                                <h3 class="main_content_item_title">Giftset "Cà phê phin Việt Nam"</h3>
-                                <p class="main_content_item_text">
-                                    Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng
-                                    chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng,
-                                    cùng với
-                                    tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ
-                                    dành riêng
-                                    cho bạn.
-                                </p>
-                                <div class="main_content_tabs_block_item_additional_info_wrapper">
-                                    <div class="main_content_tabs_block_item_additional_info_item">
-                                        <p class="main_content_tabs_block_item_additional_info_item_text"><span>Loại
-                                                hạt</span></p>
-                                        <p class="main_content_tabs_block_item_additional_info_item_text">Fine Robusta
-                                            Blend </p>
-                                    </div>
-                                    <div class="main_content_tabs_block_item_additional_info_item">
-                                        <p class="main_content_tabs_block_item_additional_info_item_text"><span>Độ
-                                                cao</span></p>
-                                        <p class="main_content_tabs_block_item_additional_info_item_text">700 - 800m</p>
-                                    </div>
-                                </div>
-                                <div class="main_content_buttons_wrapper">
-                                    <a href="#" class="main_content_button bordered">MUA NGAY</a>
-                                    <a href="#" class="main_content_button">CHI TIẾT</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main_content_tabs_block_item">
-                        <h2 class="tab_number">3</h2>
-                        <div class="main_content_tabs_block_wrapper">
-                            <img src="uploads/bg-giftset.png" class="main_content_tabs_block_item_image">
-                            <div class="main_content_tabs_block_item_text_block">
-                                <h5 class="main_content_colored_subtitle">285.000</h5>
-                                <h3 class="main_content_item_title">Giftset "Cà phê phin Việt Nam"</h3>
-                                <p class="main_content_item_text">
-                                    Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng
-                                    chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng,
-                                    cùng với
-                                    tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ
-                                    dành riêng
-                                    cho bạn.
-                                </p>
-                                <div class="main_content_tabs_block_item_additional_info_wrapper">
-                                    <div class="main_content_tabs_block_item_additional_info_item">
-                                        <p class="main_content_tabs_block_item_additional_info_item_text"><span>Loại
-                                                hạt</span></p>
-                                        <p class="main_content_tabs_block_item_additional_info_item_text">Fine Robusta
-                                            Blend </p>
-                                    </div>
-                                    <div class="main_content_tabs_block_item_additional_info_item">
-                                        <p class="main_content_tabs_block_item_additional_info_item_text"><span>Độ
-                                                cao</span></p>
-                                        <p class="main_content_tabs_block_item_additional_info_item_text">700 - 800m</p>
-                                    </div>
-                                </div>
-                                <div class="main_content_buttons_wrapper">
-                                    <a href="#" class="main_content_button bordered">MUA NGAY</a>
-                                    <a href="#" class="main_content_button">CHI TIẾT</a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="tab_number_block">
+                        <button class="tab_number active">1</button>
+                        <button class="tab_number">2</button>
+                        <button class="tab_number">3</button>
                     </div>
                 </div>
             </div>
@@ -202,8 +213,10 @@
                     <div class="main_content_cards_block_item">
                         <img src="uploads/img-revo-dam-da.png" class="main_content_cards_block_item_image">
                         <div class="main_content_cards_block_item_text_block">
-                            <h5 class="main_content_colored_subtitle">147.000</h5>
-                            <h6 class="main_content_cards_block_item_crossed_subtitle">155.000</h6>
+                            <div class="main_content_colored_title_wrapper">
+                                <h4 class="main_content_colored_subtitle">147.000</h4>
+                                <h5 class="main_content_cards_block_item_crossed_subtitle">155.000</h5>
+                            </div>
                             <h3 class="main_content_item_title">Combo Revo Đậm Đà</h3>
                             <p class="main_content_item_text">
                                 Hàm lượng caffein trong Revo Đậm Đà đủ mạnh để làm bạn tỉnh táo, tập trung làm việc. Bạn
@@ -212,34 +225,38 @@
                                 Đậm Đà cùng với vị ngọt béo của sữa đặc theo tỷ lệ phù hợp để tự pha một ly cà phê sữa
                                 đá thơm ngon.
                             </p>
-                        </div>
-                        <div class="main_content_buttons_wrapper">
-                            <a href="#" class="main_content_button bordered">MUA NGAY</a>
-                            <a href="#" class="main_content_button">CHI TIẾT</a>
+                            <div class="main_content_buttons_wrapper">
+                                <a href="#" class="main_content_button bordered">MUA NGAY</a>
+                                <a href="#" class="main_content_button">CHI TIẾT</a>
+                            </div>
                         </div>
                     </div>
                     <div class="main_content_cards_block_item">
                         <img src="uploads/img-revo-everyday.png" class="main_content_cards_block_item_image">
                         <div class="main_content_cards_block_item_text_block">
-                            <h5 class="main_content_colored_subtitle">156.000</h5>
-                            <h6 class="main_content_cards_block_item_crossed_subtitle">165.000</h6>
+                            <div class="main_content_colored_title_wrapper">
+                                <h4 class="main_content_colored_subtitle">156.000</h4>
+                                <h5 class="main_content_cards_block_item_crossed_subtitle">165.000</h5>
+                            </div>
                             <h3 class="main_content_item_title">Combo Revo Everyday</h3>
                             <p class="main_content_item_text">
                                 Revo Everyday được phối trộn giữa vị đắng của hạt Robusta và hương thơm, hậu vị ngọt của
                                 hạt Arabica để tạo ra một “công thức hoàn hảo” cho ly cà phê thỏa mãn gu vị của đại đa
                                 số người Việt.
                             </p>
-                        </div>
-                        <div class="main_content_buttons_wrapper">
-                            <a href="#" class="main_content_button bordered">MUA NGAY</a>
-                            <a href="#" class="main_content_button">CHI TIẾT</a>
+                            <div class="main_content_buttons_wrapper">
+                                <a href="#" class="main_content_button bordered">MUA NGAY</a>
+                                <a href="#" class="main_content_button">CHI TIẾT</a>
+                            </div>
                         </div>
                     </div>
                     <div class="main_content_cards_block_item">
                         <img src="uploads/img-revo-honey.png" class="main_content_cards_block_item_image">
                         <div class="main_content_cards_block_item_text_block">
-                            <h5 class="main_content_colored_subtitle">275.000</h5>
-                            <h6 class="main_content_cards_block_item_crossed_subtitle">260.000</h6>
+                            <div class="main_content_colored_title_wrapper">
+                                <h4 class="main_content_colored_subtitle">275.000</h4>
+                                <h5 class="main_content_cards_block_item_crossed_subtitle">260.000</h5>
+                            </div>
                             <h3 class="main_content_item_title">Combo Revo Honey</h3>
                             <p class="main_content_item_text">
                                 Honey – trong tên gọi Revo Honey đến từ phương pháp chế biến hạt Arabica. Phương pháp
@@ -247,10 +264,10 @@
                                 tách vỏ, giữ lại “lớp thịt” trên hạt với độ ngọt cao, khi phơi khô sẽ để lại màu nâu đỏ
                                 đặc trưng của mật ong với vị chua nhẹ như trái cây họ táo và hậu vị kéo dài.
                             </p>
-                        </div>
-                        <div class="main_content_buttons_wrapper">
-                            <a href="#" class="main_content_button bordered">MUA NGAY</a>
-                            <a href="#" class="main_content_button">CHI TIẾT</a>
+                            <div class="main_content_buttons_wrapper">
+                                <a href="#" class="main_content_button bordered">MUA NGAY</a>
+                                <a href="#" class="main_content_button">CHI TIẾT</a>
+                            </div>
                         </div>
                     </div>
                 </div>
