@@ -1,0 +1,160 @@
+.header
+    background: linear-gradient(to right, $color-light 0%, $color-light 50%, $color-primary 50%, $color-primary 100%)
+
+    & .container
+        +myflex-row()
+        justify-content: space-between
+        height: 768px
+        background: url(../uploads/bg-main-coffee.png) 357px top no-repeat
+
+        +tablet-landscape
+            background-position: right top
+
+        +mobile-landscape
+            position: relative
+            height: 400px
+
+.header_banner_block
+    +myflex-column()
+    justify-content: space-between
+    align-items: flex-start
+    margin: 75px 0 54px 112px
+
+    +tablet-landscape
+        flex: 1 0 0%
+        margin: 0
+        padding: 75px 0 54px 5%
+        background: rgba($color-accent-light, 70%)
+
+.logo_link
+    display: block
+
+.logo_image
+    display: block
+
+.header_title
+    color: $color-primary
+    margin: 0 0 0 8px
+
+    & span
+        display: block
+        background: $color-accent
+        color: $color-light
+        padding: 0 15px
+        margin-left: -15px
+
+.header_navbar_block
+    width: 199px
+    +myflex-column()
+    justify-content: flex-start
+    align-items: flex-start
+    padding: 89px 0 0 56px
+    background: $color-primary
+
+    +mobile-landscape
+        flex-direction: row
+        position: absolute
+        right: 0
+        top: 0
+        bottom: 0
+        width: auto
+        padding: 40px 20px
+
+.header_navbar_buttons_block
+    +myflex-column()
+    justify-content: flex-start
+    align-items: flex-start
+
+    +mobile-landscape
+        order: 2
+
+.header_navbar_burger
+    display: none
+
+    +mobile-landscape
+        display: block
+        background: transparent
+        border: none
+        position: relative
+        width: 25px
+        height: 20px
+        cursor: pointer
+        margin-bottom: 40px
+
+        &.active
+            & span:nth-child(1)
+                top: 9px
+                transform: rotate(45deg)
+
+            & span:nth-child(2)
+                opacity: 0
+
+            & span:nth-child(3)
+                top: 9px
+                transform: rotate(-45deg)
+
+        & span
+            position: absolute
+            display: block
+            width: 100%
+            height: 2px
+            background: $color-light
+            left: 0
+            transition: 0.2s
+
+            &:nth-child(1)
+                top: 0
+
+            &:nth-child(2)
+                top: 9px
+
+            &:nth-child(3)
+                top: 18px
+
+.header_navbar_block_cart
+    display: inline-block
+    position: relative
+    width: 18px
+    height: 18px
+    text-decoration: none
+    background: url(../img/ic-shopping-cart.svg) center no-repeat
+    margin: 0 0 123px 3px
+
+    & span
+        +my-font(14px, 300, 20px)
+        display: inline-block
+        position: absolute
+        top: -13px
+        left: 13px
+        min-width: 20px
+        height: 20px
+        background: $color-accent
+        color: $color-light
+        border-radius: 10px
+        text-align: center
+        padding: 0 5px
+
+.header_navbar_block_container
+    +my-font(16px, 300, 22px)
+    text-transform: uppercase
+    +myflex-column()
+    justify-content: flex-start
+    align-items: flex-start
+
+    +mobile-landscape
+        width: 0
+        padding: 0
+        overflow: hidden
+        transition: width 0.2s
+
+    &.active
+        +mobile-landscape
+            width: 150px
+
+.header_navbar_item
+    color: $color-light-gray
+    text-decoration: none
+    margin-bottom: 27px
+
+    &.active, &:hover
+        font-weight: 700
